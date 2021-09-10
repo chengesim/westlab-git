@@ -131,7 +131,7 @@ There are two ways of introducing yourself to Git, in RStudio or via the Shell (
 - You need to confirm Git and GitHub can talk to each other.
 - This will be part of the demo in the lab.
 
-When you want Git and GitHub talk to each other, GitHub might want you to authentication yourself every time. This could be extremely frustrating in the long run. So, you will cache your credentials. You can use HTTPS or SSH keys, we will use HTTPS. I tested it first and found it easier to follow. @bryanExcuseMeYou2017 and GitHub also recommends it for first time users.
+When you want Git and GitHub to talk to each other, GitHub might want you to authenticate yourself every time. This could be extremely frustrating in the long run. So, you will cache your credentials. You can use HTTPS or SSH keys, we will use HTTPS. I tested HTTPS first and found it is easier to follow. @bryanExcuseMeYou2017 and GitHub also recommend it for first time users.
 
 ## Generate a personal access token (PAT)
 
