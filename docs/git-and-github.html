@@ -226,13 +226,30 @@ div.csl-indent {
 <span id="cb6-2"><a href="git-and-github.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&#39;gitcreds&#39;)</span></span>
 <span id="cb6-3"><a href="git-and-github.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># library(gitcreds)</span></span>
 <span id="cb6-4"><a href="git-and-github.html#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="git-and-github.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># gitcreds_set(url = &#39;your PAT&#39;)</span></span>
-<span id="cb6-6"><a href="git-and-github.html#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="git-and-github.html#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># use to check, replace or see your token</span></span>
-<span id="cb6-8"><a href="git-and-github.html#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="git-and-github.html#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># gitcreds_get()</span></span>
-<span id="cb6-10"><a href="git-and-github.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># OR</span></span>
-<span id="cb6-11"><a href="git-and-github.html#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># gitcreds::gitcreds_set()</span></span></code></pre></div>
+<span id="cb6-5"><a href="git-and-github.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># gitcreds_set(url = &#39;your PAT&#39;)</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="git-and-github.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use to check, replace or see your token</span></span>
+<span id="cb7-2"><a href="git-and-github.html#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="git-and-github.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># gitcreds_get()</span></span>
+<span id="cb7-4"><a href="git-and-github.html#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="git-and-github.html#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># &lt;gitcreds&gt;</span></span>
+<span id="cb7-6"><a href="git-and-github.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#  protocol: https</span></span>
+<span id="cb7-7"><a href="git-and-github.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#  host    : github.com</span></span>
+<span id="cb7-8"><a href="git-and-github.html#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#  username: PersonalAccessToken</span></span>
+<span id="cb7-9"><a href="git-and-github.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#  password: &lt;-- hidden --&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="git-and-github.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># OR</span></span>
+<span id="cb8-2"><a href="git-and-github.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># gitcreds::gitcreds_set()</span></span>
+<span id="cb8-3"><a href="git-and-github.html#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># -&gt; Your current credentials for &#39;https://github.com&#39;:</span></span>
+<span id="cb8-4"><a href="git-and-github.html#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="git-and-github.html#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#  protocol: https</span></span>
+<span id="cb8-6"><a href="git-and-github.html#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">#  host    : github.com</span></span>
+<span id="cb8-7"><a href="git-and-github.html#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#  username: PersonalAccessToken</span></span>
+<span id="cb8-8"><a href="git-and-github.html#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">#  password: &lt;-- hidden --&gt;</span></span>
+<span id="cb8-9"><a href="git-and-github.html#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="git-and-github.html#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">#-&gt; What would you like to do? </span></span>
+<span id="cb8-11"><a href="git-and-github.html#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="git-and-github.html#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 1: Keep these credentials</span></span>
+<span id="cb8-13"><a href="git-and-github.html#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2: Replace these credentials</span></span>
+<span id="cb8-14"><a href="git-and-github.html#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 3: See the password / token</span></span></code></pre></div>
 <p>You can probably delete the <code>test-proj</code></p>
 </div>
 </div>
