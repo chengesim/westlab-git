@@ -6,5 +6,5 @@ bookdown::gitbook:
         <li><a href="./"Git and GitHub set up recipe for the West-lab</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/sim-chenge/westlab-git/%s
+    edit: https://github.com/sim-chenge/westlab-git/blob/main/%s
     download: ["pdf"]
