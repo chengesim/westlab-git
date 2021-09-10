@@ -71,13 +71,13 @@ I think Git is in developer tools.
 
 - Open the terminal, enter `which git`.
 - If you have git you should get this `/usr/bin/git`.
-- If not you will get 'git: command not found' and prompted to install developer tools,accept!
+- If not you will get `git: command not found` and prompted to install developer tools,accept!
 
 # Personalise Git
 
 - Create a `test-proj` in RStudio
-- In the pop-up wizard type directory name `test-proj`, below that is its path and below it you should see a box with a note 'create a git repository', check it.
-- Apparently sometimes RStudio does not automatically recongise Git
+- In the pop-up wizard type directory name `test-proj`, below that is its path and below it you should see a box with a note `'create a git repository'`, check it.
+- Apparently sometimes RStudio does not automatically recongise Git.
 - If this happens check out chapter 13 of Happy Git <https://happygitwithr.com/rstudio-see-git.html>
 
 There are two ways of introducing yourself to Git, in RStudio or via the Shell (Git Bash).
@@ -188,7 +188,7 @@ You need to store your token into the Git store.
 # 3: See the password / token
 ```
 
-You can probably delete the `test-proj`
+You can probably delete the `test-proj` now.
  
 # Conclusion
 
