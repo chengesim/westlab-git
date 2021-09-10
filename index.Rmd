@@ -95,7 +95,7 @@ There are two ways of introducing yourself to Git, in RStudio or via the Shell (
 ```
 
 - You can make this your GitHub username and email; these are your credentials when you collaborate with others.
-- This commands confirms Git knows you `git config --global --list`
+- This command confirms Git knows you `git config --global --list`
 
 ```{r cred-output, echo=TRUE}
 # should return something like
