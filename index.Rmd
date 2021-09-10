@@ -93,13 +93,9 @@ There are two ways of introducing yourself to Git, in RStudio or via the Shell (
 ```
 
 - You can make this your GitHub username and email; these are your credentials when you collaborate with others.
+- This commands confirms Git knows you `git config --global --list`
 
 ```{r cred-output, echo=TRUE}
-# this commands confirms Git knows you
-
-# git config --global --list
-
-
 # should return something like
 
 # user.name=Simcelile Chenge
@@ -108,11 +104,11 @@ There are two ways of introducing yourself to Git, in RStudio or via the Shell (
 ```
 
 - When you accepted the defaults you accepted a core-editor.
-- If do not have it or  want to configure it.
+- If you do not have it or  want to configure it.
 - Mine is 'emacs', you could choose e.g., 'notepad++'
 
 ```{r editor, echo=TRUE}
-# use the command 
+# set it or change it like this
 
 # git config --global core.editor "notepad++"
 ```
