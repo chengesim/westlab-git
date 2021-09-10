@@ -87,9 +87,9 @@ There are two ways of introducing yourself to Git, in RStudio or via the Shell (
 - And that should take you to Git Bash. You will note that Bash shows you the path to your test project `test-proj`.
 
 ```{r bash-intro, echo=TRUE}
-# use the commands
-# git config --global user.name 'Jane Doe'
-# git config --global user.email 'jane@example.com'
+# use the commands (e.g.,)
+# git config --global user.name 'Simcelile Chenge'
+# git config --global user.email 'ch...@myuct.ac.za'
 ```
 
 - You can make this your GitHub username and email; these are your credentials when you collaborate with others.
