@@ -69,7 +69,7 @@ This should take you less than an hour assuming you do not encounter any issues.
 
 I think Git is in developer tools.
 
-- Open the terminal, type `which git`.
+- Open the terminal, enter `which git`.
 - If you have git you should get this `/usr/bin/git`.
 - If not you will get 'git: command not found' and prompted to install developer tools,accept!
 
