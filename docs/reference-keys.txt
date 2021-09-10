@@ -1,0 +1,15 @@
+introduction
+github
+r-and-rstudio
+git
+for-windows
+for-dos
+for-mac
+personalise-git
+git-bash
+in-rstudio
+git-and-github
+generate-a-personal-access-token-pat
+store-the-pat
+conclusion
+references

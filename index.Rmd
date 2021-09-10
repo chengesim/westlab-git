@@ -1,0 +1,178 @@
+---
+title: "Git and GitHub set up recipe for the West-lab"
+author: "Simcelile Chenge"
+date: "`r Sys.Date()`"
+output: [bookdown::gitbook, github_document]
+site: bookdown::bookdown_site
+fontsize: 11pt
+bibliography: library.bib
+biblio-style: apalike
+link-citations: yes
+cover-image: uct-logo.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Preface {-}
+
+```{r fig.align='center', echo=FALSE}
+knitr::include_graphics('uct-logo.jpg', dpi = NA)
+```
+
+# About {-}
+
+This document presents Git and GitHub set up guidelines for the West-lab in the Biological Sciences Department at the University of Cape Town.
+
+# Introduction
+
+This document should help you create a GitHub account and install Git. The minimum set-up for our demo in the lab. For this purpose, I am writing it as a recipe or to-do list. It should help you prepare for the demo without reading or thinking about stuff you are not interested in at the moment. I received a response from everyone about their Operating Systems (OS); mostly Windows, one Mac and one DOS. I did not know what that last one was. Therefore, the to-do list is for Windows and Mac, sorry DOS user but I hope they work for you as well. When you follow the to-do list, you might encounter OS and/or computer specific issues. You can check with me, Google it - should inevitably take you to Stack Overflow (lovely question-and-answer community).
+
+I created this to-do list from Happy Git with R <https://happygitwithr.com>; it is a beautiful set-up resource. @bryanExcuseMeYou2017 also has a standalone introduction for Happy Git with R. They give succinct installation and configuration guidelines, and in a lively manner.
+
+This should take you less than an hour assuming you do not encounter any issues.
+
+# GitHub
+
+- Go to <https://github.com>
+
+- Sign up for a GitHub account.
+
+- Your username should be in lower cases, short and preferably your real name. For example mine is 'sim-chenge'.
+
+- GitHub will ask you to personalise your account, you can do that or just skip the step.
+
+- Select continue for free, to create a free account.
+
+- If you like, you can make your profile look nice and inviting (e.g., bio, picture, etc.)
+
+# R and RStudio
+
+- I know everyone is using R and RStudio.This is an invitation to update if you have not caught up with the latest versions.
+
+# Git
+
+## For Windows
+
+- Go to <https://gitforwindows.org>
+- Download the .exe file extension relevant to the Windows bit you're running.
+- Happy Git and RStudio suggest that Git should live in a path like `C:/Program Files/Git/bin/git.exe`
+- Make sure you create a desktop shortcut for Git Bash.
+- I would suggest you just accept all the defaults thereafter.
+
+## For DOS
+
+- I would suggest trying <https://git-scm.com/download>
+
+## For Mac
+
+I think Git is in developer tools.
+
+- Open the terminal, type `which git`.
+- If you have git you should get this `/usr/bin/git`.
+- If not you will get 'git: command not found' and prompted to install developer tools,accept!
+
+# Personalise Git
+
+- Create a `test-proj` in RStudio
+- In the pop-up wizard type directory name `test-proj`, below that is its path and below it you should see a box with a note 'create a git repository', check it.
+
+There are two ways of introducing yourself to Git, in RStudio or via the Shell (Git Bash).
+
+## Git bash
+
+- Open the desktop shortcut of Git Bash or
+- In RStudio go to: Tools > Shell...
+- And that should take you to Git Bash. You will note that Bash shows you the path to your test project `test-proj`.
+
+```{r bash-intro, echo=TRUE}
+# use the commands
+# git config --global user.name 'Jane Doe'
+# git config --global user.email 'jane@example.com'
+```
+
+- You can make this your GitHub username and email; these are your credentials when you collaborate with others.
+
+```{r cred-output, echo=TRUE}
+# this commands confirms Git knows you
+
+# git config --global --list
+
+
+# should return something like
+
+# user.name=Simcelile Chenge
+# user.email=ch...@myuct.ac.za
+# core.editor=emacs
+```
+
+- When you accepted the defaults you accepted a core-editor.
+- If do not have it or  want to configure it.
+- Mine is 'emacs', you could choose e.g., 'notepad++'
+
+```{r editor, echo=TRUE}
+# use the command 
+
+# git config --global core.editor "notepad++"
+```
+
+## In RStudio
+
+- Install an awesome R package called 'usethis' and make sure it is in your library
+
+```{r get-usethis, echo=TRUE}
+# install.packages('usethis')
+# library('usethis')
+
+# use_git_config(user.name = "Jane Doe", user.email = "ch...@myuct.ac.za")
+```
+
+# Git and GitHub
+
+- You need to confirm Git and GitHub can talk to each other.
+- This will be part of the demo in the lab.
+
+When you want Git and GitHub talk to each other, GitHub might want you to authentication yourself every time. This could be extremely frustrating in the long run. So, you will cache your credentials. You can you HTTPS or SSH keys, we will use HTTPS. I tested it first and found it easier to follow. @bryanExcuseMeYou2017 and GitHub also recommends it for first time users.
+
+## Generate a personal access token (PAT)
+
+Git uses this instead of a password.
+
+```{r get-pat, echo=TRUE}
+# the function below will take you to GitHub to create a PAT
+# set the expiration date you want
+# go ahead generate token
+
+# usethis::create_github_token()
+```
+
+Keep the PAT safe somewhere. GitHub will send you an email letting you know a PAT was created (will not send the actual token via email). You can access it on GitHub or via RStudio. More about that below.
+
+## Store the PAT
+
+You need to store your token into the Git store.
+
+```{r store-pat, echo=TRUE}
+# install an R package called 'gitcreds' and keep it in your library
+# install.packages('gitcreds')
+# library(gitcreds)
+
+# gitcreds_set(url = 'your PAT')
+
+# use to check, replace or see your token
+
+# gitcreds_get()
+# OR
+# gitcreds::gitcreds_set()
+```
+
+You can probably delete the `test-proj`
+ 
+# Conclusion
+
+If nothing went wrong (highly unlikely - I just hope you found a solution) you should have a GitHub account and Git in your computer. Git and GitHub should be able to talk to each other, we will test this will in our live demo.
+
+I look forward to all your success stories:)
+
+# References

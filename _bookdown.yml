@@ -1,0 +1,7 @@
+book_filename: "westlab-git"
+output_dir: docs
+repo: https://github.com/sim-chenge/westlab-git.git
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: " "
