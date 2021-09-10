@@ -162,30 +162,14 @@ You need to store your token into the Git store.
 ```{r check-token, echo=TRUE}
 # use to check, replace or see your token
 
-# gitcreds_get()
+gitcreds_get()
 
-# <gitcreds>
-#  protocol: https
-#  host    : github.com
-#  username: PersonalAccessToken
-#  password: <-- hidden -->
 ```
 
 ```{r option2-token, echo=TRUE}
 # OR
-# gitcreds::gitcreds_set()
-# -> Your current credentials for 'https://github.com':
 
-#  protocol: https
-#  host    : github.com
-#  username: PersonalAccessToken
-#  password: <-- hidden -->
-
-#-> What would you like to do? 
-
-# 1: Keep these credentials
-# 2: Replace these credentials
-# 3: See the password / token
+ gitcreds::gitcreds_set()
 ```
 
 You can probably delete the `test-proj`
@@ -197,3 +181,6 @@ If nothing went wrong (highly unlikely - I just hope you found a solution) you s
 I look forward to all your success stories:)
 
 # References
+
+<!--chapter:end:index.Rmd-->
+
