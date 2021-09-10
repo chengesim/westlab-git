@@ -192,7 +192,7 @@ You can probably delete the `test-proj` now.
  
 # Conclusion
 
-If nothing went wrong (highly unlikely - I just hope you found a solution) you should have a GitHub account and Git in your computer. Git and GitHub should be able to talk to each other, we will test this will in our live demo.
+If nothing went wrong (highly unlikely - I just hope you found a solution) you should have a GitHub account and Git in your computer. Git and GitHub should be able to talk to each other, we will test this in our live demo.
 
 I look forward to all your success stories:)
 
