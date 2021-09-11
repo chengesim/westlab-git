@@ -23,7 +23,7 @@ knitr::include_graphics('uct-logo.jpg', dpi = NA)
 
 # About {-}
 
-This document presents Git and GitHub set up guidelines for the Adam West-lab in the Biological Sciences Department at the University of Cape Town.
+In this document, I present Git and GitHub set up guidelines for the Adam West-lab in the Biological Sciences Department at the University of Cape Town.
 
 # Introduction
 
