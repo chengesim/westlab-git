@@ -8,7 +8,6 @@ fontsize: 11pt
 bibliography: library.bib
 biblio-style: apalike
 link-citations: yes
-cover-image: uct-logo.jpg
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Preface {-}
 
-```{r fig.align='center', echo=FALSE}
+```{r cover-image, fig.align='center', echo=FALSE}
 knitr::include_graphics('uct-logo.jpg', dpi = NA)
 ```
 
